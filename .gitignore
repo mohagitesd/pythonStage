@@ -1,0 +1,20 @@
+# Crucial
+venv/
+
+# fichier compilés Python
+__pycache__/
+*.py[cod]
+
+# VScode
+.vscode/
+
+# Fichiers de logs
+*.log
+
+# Base de données locales 
+*.sqlite
+
+# Fichier systeme
+
+.DS_Store
+
