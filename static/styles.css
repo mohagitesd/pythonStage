@@ -1,0 +1,19 @@
+body {
+  background: linear-gradient(120deg, #4b0082, #1b3b82, #00ffff);
+
+  color: snow;
+}
+.toto {
+  color: greenyellow;
+}
+
+footer {
+  background: color #000000bb;
+  padding: 25px;
+  text-align: center;
+  z-index: 1;
+  color: black;
+}
+.card {
+  border: 1px black solid;
+}

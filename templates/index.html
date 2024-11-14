@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baltazar</title>
+    <link rel="stylesheet" href="{{url_for('static', path='styles.css')}}" />
+  </head>
+  <body>
+    <h1>The only one</h1>
+    <p>{{name}}</p>
+    {{friends}}
+    <ul>
+      {% for friend in friends%} {% if friend == "Yoshi" %}
+      <li class="toto">{{friend}}</li>
+      {% else %}
+      <li>{{friend}}</li>
+      {% endif %} {% endfor %}
+    </ul>
+
+    {% for friend in friends%} {% include "friends.html"%} {% endfor %}
+
+    <img src="{{url_for('static', path='img.png')}}" alt="" />
+    {% include "footer.html" %}
+  </body>
+</html>
