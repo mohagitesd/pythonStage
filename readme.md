@@ -62,3 +62,25 @@ sequenceDiagram
     Bob-->>John: Jolly good!
 
 ```
+
+```plantuml
+@startuml
+abstract        abstract
+abstract class  "abstract class"
+annotation      annotation
+circle          circle
+()              circle_short_form
+class           class
+class           class_stereo  <<stereotype>>
+diamond         diamond
+<>              diamond_short_form
+entity          entity
+enum            enum
+exception       exception
+interface       interface
+metaclass       metaclass
+protocol        protocol
+stereotype      stereotype
+struct          struct
+@enduml
+```
