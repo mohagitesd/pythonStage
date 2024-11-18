@@ -41,3 +41,29 @@ Authentification
 - définir une route /home
 - définir la fonction read_home
 - installer jinja2
+
+# Fichiers imprtant
+
+- app.py : Application
+  - coeur du système
+  - import
+  - run
+- bdd.py (tests)
+  - importer les classes
+  - faire des tests
+- database
+  - communiquer avec la base
+- 1 classe par table
+- stage
+  - définir le model (structure)
+  - CRUD = Create Read Update Delete (bdd)
+  - ORM s'en charge
+- projet
+  - définir le model (structure)
+  - CRUD = Create Read Update Delete (bdd)
+  - ORM s'en charge
+- etc...
+
+# Réorganisation = Rest API
+
+- Client -> Serveur
