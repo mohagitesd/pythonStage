@@ -5,14 +5,28 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from projet_routes import router as projet_routes
+from stage_routes import router as stage_routes
 
 
+from fastapi.middleware.cors import CORSMiddleware
  
 
 
 
 app = FastAPI() # créer une instance
+
+
+origins = ['*']
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 app.include_router(projet_routes)
+app.include_router(stage_routes)
 
 #Initialiser le moteur de template
 templates = Jinja2Templates(directory="templates")

@@ -22,3 +22,30 @@ Content-Type: application/json
     "name_project":"Le projet"
 
 }
+
+#STAGE
+
+GET http://127.0.0.1:8000
+###
+GET http://127.0.0.1:8000/stages
+###
+POST http://127.0.0.1:8000/stages
+Content-Type: application/json
+
+{
+    "poste":"rubrique",
+    "entreprise":"name_projects",
+    "expédition":"24-04-2024",
+    "url":"rendu"
+}
+###
+DELETE http://127.0.0.1:8000/projets/4
+
+###
+PUT http://127.0.0.1:8000/projets/3
+Content-Type: application/json
+
+{
+    "name_project":"Le projet"
+
+}
