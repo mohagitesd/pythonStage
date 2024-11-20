@@ -8,7 +8,7 @@
     )               
 '''
 from stage_class import Stage, fake_stage
-from projects_class import Project
+from projects_model import Project
 from database import get_session
 from typing import Optional
 from sqlmodel import select
